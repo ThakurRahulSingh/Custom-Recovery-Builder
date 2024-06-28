@@ -6,23 +6,23 @@ on:
       MANIFEST_BRANCH:
         description: Manifest Branch
         required: true
-        default: v3_9.0
+        default: shrp-12.1
       DEVICE_TREE_URL:
         description: Device Tree URL
         required: true
-        default: https://github.com/SHRP-Devices/device_samsung_d2x
+        default: https://github.com/ThakurRahulSingh/recovery_miatoll
       DEVICE_TREE_BRANCH:
         description: Device Tree Branch
         required: true
-        default: android-9.0
+        default: twrp
       DEVICE_PATH:
         description: Path the device tree should be synced to, relative to source root
         required: true
-        default: device/samsung/d2x
+        default: device/xiaomi/miatoll
       DEVICE_MAKEFILE:
         description: 'Name of device-specific makefile from tree (format: <PREFIX>_<DEVICE_NAME>)'
         required: true
-        default: omni_d2x
+        default: twrp_miatoll
       BUILD_TARGET:
         type: choice
         description: Partition containing recovery ramdisk
