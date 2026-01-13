@@ -18,19 +18,19 @@ on:
       DEVICE_TREE_URL:
         description: Device Tree URL
         required: true
-        default: https://github.com/ThakurRahulSingh/recovery_peridot
+        default: https://github.com/ThakurRahulSingh/device_cmf_tetris
       DEVICE_TREE_BRANCH:
         description: Device Tree Branch
         required: true
-        default: 12.1
+        default: main
       DEVICE_PATH:
         description: Path the device tree should be synced to, relative to source root
         required: true
-        default: device/xiaomi/peridot
+        default: device/cmf/tetris
       DEVICE_NAME:
         description: Device Name from tree (should match name on twrp_<DEVICE_NAME>.mk)
         required: true
-        default: peridot
+        default: tetris
       REPOPICK_PATCHES:
         description: (Optional) Gerrit commit numbers separated by a space to be included in the build (leave blank if not using)
         type: string
@@ -43,7 +43,7 @@ on:
         - recovery
         - vendor_boot
         required: true
-        default: recovery
+        default: vendor_boot
       RECOVERY_INSTALLER:
         description: Include recovery installer zip
         type: boolean
