@@ -12,7 +12,7 @@ on:
         - 12.1
         - 11.0
         required: true
-        default: 16.0
+        default: 12.1
       DEVICE_TREE_URL:
         description: Device Tree URL
         required: true
@@ -20,7 +20,7 @@ on:
       DEVICE_TREE_BRANCH:
         description: Device Tree Branch
         required: true
-        default: fox
+        default: main
       DEVICE_PATH:
         description: Path the device tree should be synced to, relative to source root
         required: true
