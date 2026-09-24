@@ -7,26 +7,28 @@ on:
         type: choice
         description: Manifest Branch
         options:
+        - 16.0
+        - 14.1
         - 12.1
         - 11
         required: true
-        default: 12.1
+        default: 16.0
       DEVICE_TREE_URL:
         description: Device Tree URL
         required: true
-        default: https://gitlab.com/OrangeFox/device/lavender
+        default: https://github.com/ThakurRahulSingh/device_cmf_tetris
       DEVICE_TREE_BRANCH:
         description: Device Tree Branch
         required: true
-        default: fox_12.1
+        default: fox
       DEVICE_PATH:
         description: Path the device tree should be synced to, relative to source root
         required: true
-        default: device/xiaomi/lavender
+        default: device/cmf/tetris
       DEVICE_NAME:
         description: Device Name from tree (should match name on twrp_<DEVICE_NAME>.mk)
         required: true
-        default: lavender
+        default: tetris
       BUILD_TARGET:
         type: choice
         description: Partition containing recovery ramdisk
@@ -35,7 +37,7 @@ on:
         - recovery
         - vendor_boot
         required: true
-        default: recovery
+        default: vendor_boot
       OPTIONAL_FLAGS:
         description: (Optional) Additional "FOX_" flags for build can be added here
         required: false
