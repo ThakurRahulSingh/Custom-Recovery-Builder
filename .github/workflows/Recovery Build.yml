@@ -16,7 +16,7 @@ on:
       DEVICE_TREE_URL:
         description: Device Tree URL
         required: true
-        default: https://github.com/ThakurRahulSingh/device_nothing_Tetris
+        default: https://github.com/ThakurRahulSingh/device_nothing_tetris
       DEVICE_TREE_BRANCH:
         description: Device Tree Branch
         required: true
@@ -24,11 +24,11 @@ on:
       DEVICE_PATH:
         description: Path the device tree should be synced to, relative to source root
         required: true
-        default: device/nothing/Tetris
+        default: device/nothing/tetris
       DEVICE_NAME:
         description: Device Name from tree (should match name on fox_<DEVICE_NAME>.mk)
         required: true
-        default: Tetris
+        default: tetris
       BUILD_TARGET:
         type: choice
         description: Partition containing recovery ramdisk
