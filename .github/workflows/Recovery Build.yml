@@ -16,7 +16,7 @@ on:
       DEVICE_TREE_URL:
         description: Device Tree URL
         required: true
-        default: https://github.com/ThakurRahulSingh/device_cmf_tetris
+        default: https://github.com/ThakurRahulSingh/device_nothing_tetris
       DEVICE_TREE_BRANCH:
         description: Device Tree Branch
         required: true
