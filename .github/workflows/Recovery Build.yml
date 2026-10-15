@@ -24,7 +24,7 @@ on:
       DEVICE_PATH:
         description: Path the device tree should be synced to, relative to source root
         required: true
-        default: device/cmf/tetris
+        default: device/nothing/tetris
       DEVICE_NAME:
         description: Device Name from tree (should match name on fox_<DEVICE_NAME>.mk)
         required: true
